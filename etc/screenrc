@@ -1,0 +1,10 @@
+# Added by wajchina
+shell /bin/bash
+term xterm
+startup_message off
+altscreen on
+vbell off
+caption always "%?%F%{-b 4w}%:%{-b bb}%? %H | %c |%?%F%{-b 4w}%?%L=%-Lw%45>%{-b w4}%n%f* %t%{-}%+Lw%-0<"
+defscrollback 1000
+## Do not use xterm's alternative window buffer, it breaks scrollback (see bug #61195)
+termcapinfo xterm|xterms|xs ti@:te=\E[2J
